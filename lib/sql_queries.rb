@@ -48,6 +48,7 @@ FROM projects
 JOIN pledges
 ON projects.id = pledges.project_id
 GROUP BY projects.title;
+WHERE projects.category = "music"
 "
 end
 
